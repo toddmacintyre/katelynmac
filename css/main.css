@@ -1,0 +1,337 @@
+/* Base Styles -------------------- */
+
+/* Web Fonts -------------------- */
+
+/*@font-face {
+  font-family: 'Abolition Regular';
+  src: url('../fonts/abolition-regular-webfont.eot');
+  src: url('../fonts/abolition-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/abolition-regular-webfont.woff') format('woff'),
+       url('../fonts/abolition-regular-webfont.ttf') format('truetype');
+}
+*/
+
+
+/* Base Styles -------------------- */
+
+/** {
+	border: 1px solid red;
+}*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: black;
+  background-color: rgb(135,206,250);
+  margin: 0;
+  font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border-bottom: 10px solid black;
+}
+
+#wrapper {
+	background: linear-gradient(rgb(135,206,250), rgb(57, 94, 96));
+}
+
+h1 {  
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 1.3; 
+  text-shadow: 0 2px 5px rgba(0,0,0,.3);
+  margin: 0px 0 0;
+}
+
+h2 {  
+  font-size: 2.5rem;
+  font-weight: normal;
+  line-height: 1.3; 
+  text-shadow: 0 2px 2px rgba(0,0,0,.3);
+  margin: 0px 0 0;
+}
+
+h3 {
+	font-size: 2rem;
+  font-weight: normal;
+  line-height: 1.3; 
+  text-shadow: 0 2px 2px rgba(0,0,0,.3);
+  margin: 0px 0 0;
+}
+
+p {
+	font-size: 1rem;
+	line-height: 1.6;
+	letter-spacing: .03em;
+	font-weight: 100;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 100%;
+  box-shadow: 0px 20px 50px -5px rgba(0,0,0, .8);
+  border-radius: 10px 10px;
+}
+
+/* Pseudo-classes ------------------ */
+
+
+/* Main Styles --------------------- */
+
+.main-header {
+  padding-top: 170px;
+  height: 850px;
+  background: linear-gradient(0deg, rgb(135,206,250), transparent 90%),
+	            linear-gradient(0deg, black, transparent),
+              #000 url('../img/piano.jpg') no-repeat center;
+  background-size: cover;
+  color: white;
+}
+
+.main-header,
+.main-footer {
+  text-align: center;
+}
+
+.nav {
+	width: 30%;
+	margin: auto;
+	padding: auto;
+	font-size: 1.5rem;
+	padding: 48px 0 0;
+	display: block;
+}
+
+.nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.primary,
+.secondary {
+	background: white;
+	background-size: cover;
+	/*border: 3px solid rgb(57, 94, 96);*/
+	box-shadow: 0px 20px 50px -5px rgba(0,0,0, .8);
+  border-radius: 50px 10px;
+}
+
+p span {
+	font-style: italic;
+}
+
+.main-footer {
+  padding-top: 30px;
+  padding-bottom: 40px;
+  clear: both;
+  color: white;
+}
+
+.contact p span {
+	text-decoration: underline;
+}
+
+.arrow {
+  width: 50px;
+  margin-top: 150px;
+}
+
+.copyright {
+	color: black;
+}
+
+/* Layout Styles ------------------ */
+
+#wrapper {
+	padding: 2% 5% 0%;
+}
+
+.primary {
+	padding: 2.5%;
+  margin-right: 1.5%;
+  margin-bottom: 3%;
+  max-width: 960px;
+}
+
+.secondary {
+	padding: 2.5%;
+	margin-left: 1.5%;
+	margin-bottom: 3%;
+	max-width: 650px;
+}
+
+.headshot {
+	margin-left: 1.5%;
+	max-width: 650px;
+}
+
+.contact {
+	padding: 2.5%;
+  margin-right: 1.5%;
+  margin-bottom: 3%;
+  max-width: 700px;
+}
+
+.connect {
+	padding: 2.5%;
+	margin-left: 1.5%;
+	margin-bottom: 3%;
+	max-width: 700px;
+}
+
+.contact h3,
+.connect h3 {
+	padding-bottom: 2.5%;
+}
+
+.connect img {
+	margin: 0 10px;
+}
+
+/* Floated Columns ------------------ */
+
+/*100 - (.primary width + .secondary width) = sum of the margin values above*/
+
+.primary {
+  width: 65%;
+  float: left;
+}
+
+.headshot {
+	width: 32%;
+	float: right;
+}
+
+.secondary {
+	width: 32%;
+	float: right;
+}
+
+.contact {
+	width: 48.5%;
+	float: left;
+}
+
+.connect {
+	width: 48.5%;
+	float: right;
+}
+
+.end-content {
+	clear: both;
+}
+
+#top_button {
+/*	width: 100%;
+	display: block;
+	clear: both;*/
+}
+
+
+
+/* Float Clearfix ------------------ */
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* Colors -------------------- */
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: rgb(135,206,250);
+}
+
+a:active {
+  color: rgb(135,206,250);
+}
+
+ul {
+	list-style: none;
+}
+
+.main-header a:link,
+.main-header a:visited {
+	color: white;
+}
+
+.nav a.selected {
+	color: rgb(135,206,250);
+}
+
+.main-header a:hover,
+.main-header a:active {
+	color: rgb(135,206,250);
+}
+
+
+/* Media Queries -------------------- */
+
+/*@media (max-width: 1024px) {
+  .primary-content,
+  .secondary-content {
+    width: 90%;
+  }
+  .wildlife {
+    padding: 10% 12%;
+    margin: 50px 0 20px;
+  }
+}
+*/
+@media (max-width: 768px) {
+
+  .primary,
+  .headshot,
+  .secondary {
+    width: 100%;
+    padding: 20px;
+    margin: 30px 0;
+    float: none;
+  }
+  .main-header {
+    max-height: 380px;
+    padding: 50px 25px 0;
+  }
+  .main-header h2 {
+  	padding-top: 15px;
+  }
+  .title {
+    font-size: 1.3rem;
+    border: none;
+  }
+  h1 {
+    font-size: 2.8rem;
+    line-height: 1.1;
+  }
+  h2 {
+  	font-size: 1.8rem;
+  	line-height: 1.1;
+  }
+  .arrow {
+    display: none;
+  }
+  .intro {
+    font-size: 1rem;
+  }
+  .contact,
+  .connect {
+    float: none;
+    width: 100%;
+  }
+  .main-footer {
+    padding: 40px 0;
+  }
+}
