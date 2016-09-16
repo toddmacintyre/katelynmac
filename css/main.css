@@ -68,9 +68,14 @@ p {
 
 img {
   max-width: 100%;
-  border-radius: 100%;
   box-shadow: 0px 20px 50px -5px rgba(0,0,0, .8);
   border-radius: 10px 10px;
+}
+
+iframe {
+	margin-top: 50px;
+	max-width: 100%;
+  box-shadow: 0px 20px 50px -5px rgba(0,0,0, .8);
 }
 
 /* Pseudo-classes ------------------ */
@@ -110,11 +115,11 @@ img {
 
 .primary,
 .secondary {
-	background: white;
+	background: rgba(230, 250, 255, .8);
 	background-size: cover;
 	/*border: 3px solid rgb(57, 94, 96);*/
 	box-shadow: 0px 20px 50px -5px rgba(0,0,0, .8);
-  border-radius: 50px 10px;
+  border-radius: 5px;
 }
 
 p span {
@@ -139,6 +144,27 @@ p span {
 
 .copyright {
 	color: black;
+}
+
+/* Media ------------------ */
+
+#gallery {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#gallery li {
+  float: left;
+  background-color: transparent;
+  color: #000;
+}
+
+#gallery li a p {
+  margin: 0;
+  padding: 5%;
+  font-size: 0.75em;
+  color: #000;
 }
 
 /* Layout Styles ------------------ */
@@ -187,6 +213,11 @@ p span {
 
 .connect img {
 	margin: 0 10px;
+}
+
+
+.b-border {
+  border-bottom: 2px solid #dfe2e6;
 }
 
 /* Floated Columns ------------------ */
@@ -292,6 +323,10 @@ ul {
 }
 */
 @media (max-width: 768px) {
+
+	iframe {
+		max-height: 300px;
+	}
 
   .primary,
   .headshot,
