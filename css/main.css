@@ -18,6 +18,12 @@
 	border: 1px solid red;
 }*/
 
+
+/*Change Media Border color for p
+change EMAIL link color*/
+
+
+
 * {
   box-sizing: border-box;
 }
@@ -34,7 +40,7 @@ body {
 	background: linear-gradient(rgb(135,206,250), rgb(57, 94, 96));
 }
 
-h1 {  
+h1 {
   font-size: 4rem;
   text-transform: uppercase;
   font-weight: normal;
@@ -43,7 +49,7 @@ h1 {
   margin: 0px 0 0;
 }
 
-h2 {  
+h2 { 
   font-size: 2.5rem;
   font-weight: normal;
   line-height: 1.3; 
@@ -63,7 +69,7 @@ p {
 	font-size: 1rem;
 	line-height: 1.6;
 	letter-spacing: .03em;
-	font-weight: 100;
+	font-weight: normal;
 }
 
 img {
@@ -137,9 +143,13 @@ p span {
 	text-decoration: underline;
 }
 
+.contact a {
+
+}
+
 .arrow {
   width: 50px;
-  margin-top: 150px;
+  margin-top: 80px;
 }
 
 .copyright {
@@ -165,6 +175,10 @@ p span {
   padding: 5%;
   font-size: 0.75em;
   color: #000;
+}
+
+.b-border {
+  border-bottom: 2px solid #fff;
 }
 
 /* Layout Styles ------------------ */
@@ -213,11 +227,6 @@ p span {
 
 .connect img {
 	margin: 0 10px;
-}
-
-
-.b-border {
-  border-bottom: 2px solid #dfe2e6;
 }
 
 /* Floated Columns ------------------ */
@@ -295,7 +304,9 @@ ul {
 }
 
 .main-header a:link,
-.main-header a:visited {
+.main-header a:visited,
+.contact a:link,
+.contact a:visited {
 	color: white;
 }
 
@@ -307,6 +318,7 @@ ul {
 .main-header a:active {
 	color: rgb(135,206,250);
 }
+
 
 
 /* Media Queries -------------------- */
