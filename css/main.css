@@ -72,6 +72,10 @@ p {
 	font-weight: normal;
 }
 
+ul {
+	list-style-type: none;
+}
+
 img {
   max-width: 100%;
   box-shadow: 0px 20px 50px -5px rgba(0,0,0, .8);
@@ -128,7 +132,7 @@ iframe {
   border-radius: 5px;
 }
 
-p span {
+.primary p span {
 	font-style: italic;
 }
 
@@ -156,12 +160,15 @@ p span {
 	color: black;
 }
 
+.copyright span {
+	color: black; text-decoration: underline;
+}
+
 /* Media ------------------ */
 
 #gallery {
   margin: 0;
   padding: 0;
-  list-style: none;
 }
 
 #gallery li {
@@ -180,6 +187,26 @@ p span {
 .b-border {
   border-bottom: 2px solid #fff;
 }
+
+/* Contact ------------------ */
+
+.contact-info a {
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  width: 20px;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px; 
+}
+
+.contact-info li.mail a {
+  background-image: url('../img/mail.png');
+}
+
+.contact-info li.twitter a {
+  background-image: url('../img/twitter.png');
+}
+
 
 /* Layout Styles ------------------ */
 
@@ -297,10 +324,6 @@ a:hover {
 
 a:active {
   color: rgb(135,206,250);
-}
-
-ul {
-	list-style: none;
 }
 
 .main-header a:link,
