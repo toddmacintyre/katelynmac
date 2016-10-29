@@ -385,13 +385,20 @@ img {
 #overlay {
   background:rgba(0,0,0,0.75);
   width:100%;
-  height:100%;
   display: none;
   position:absolute;
   top:0;
   left:0;
   text-align:center;
 }
+
+#overlay img {
+  max-width: 88%;
+  max-height: 80vh;
+}
+
+/*$image.css('max-width', '70%');
+$image.css('max-height', '80vh');*/
 
 /* Floated Columns ------------------ */
 
@@ -554,6 +561,10 @@ a:active {
   #photos a.portrait {
     width: 28%;
     order: 0;
+  }
+
+  #overlay img {
+    max-width: 70%;
   }
 
 

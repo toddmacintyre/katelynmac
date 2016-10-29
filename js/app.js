@@ -4,9 +4,7 @@ var $image = $("<img>");
 // var $caption = $("<p></p>");
 
 //Set CSS properties for overlay elements
-$overlay.height( $(document).height() );
-$image.css('max-width', '70%');
-$image.css('max-height', '80vh');
+
 
 //Add an image to overlay
 $overlay.append($image);
@@ -22,6 +20,9 @@ $("#photos a").click(function(event){
 
   //Prevet default behaviour
   event.preventDefault();
+
+  //Determine overlay height based on current conditions
+  $overlay.height( $(document).height() );
 
   //Get image href value
   var imageLocation = $(this).attr("href");
