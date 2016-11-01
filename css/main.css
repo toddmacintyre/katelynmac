@@ -1,8 +1,4 @@
 
-/*
-color svg social icons
-add javascript viewing for photo gallery*/
-
 
 /* Web Fonts -------------------- */
 
@@ -240,6 +236,12 @@ img {
 
 #wrapper {
 	padding: 2% 5% 0%;
+}
+
+#container {
+  max-width: 1366px;
+  text-align: center;
+  margin: auto;
 }
 
 .main-header {
