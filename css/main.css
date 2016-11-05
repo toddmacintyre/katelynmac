@@ -219,6 +219,10 @@ img {
   margin: 0 0 10px; 
 }
 
+.contact-info li {
+  margin-bottom: 5px;
+}
+
 .contact-info li.mail a {
   background-image: url('../img/mail.png');
 }
@@ -240,7 +244,6 @@ img {
 
 #container {
   max-width: 1366px;
-  text-align: center;
   margin: auto;
 }
 
