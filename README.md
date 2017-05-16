@@ -1,4 +1,2 @@
-# katelynmac
+# [katelynmac](http://katelynmac.com)
 Client Website
-
-View the site live at: http://katelynmac.com/
